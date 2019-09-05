@@ -15,30 +15,32 @@ as well as 'Get widget' button which would change widget with provided by user s
 
 Following the steps below you will be able to get the library up and running.
 
-1. Link files:
-	```html
-		<!-- Put these into the <head> -->
-		<link rel="stylesheet" href="testbar.css">
-	```
- 
-  ```html
-  <!-- Put these before closing body tag</body> -->
-  <script src="./widget.js"></script>
-    <script>
-        let myBar = new Bar({
-            message: 'Add beautiful widgets to your website',
-            position: 'top'
-        })
-         ```
+1. Link css file:
 
-2. Add markup:
-	```html
-		 <div class="wrapper">
-        <div>
-            <button class="displayBtn wrapper__showBtn--center">Show Bar</button>
-        </div>
-    </div>
-	```
+```
+<!-- Put these into the <head> -->
+<link rel="stylesheet" href="testbar.css">
+```	
+1. Link script file:		
+```
+<!-- Put these before closing body tag</body> -->
+<script src="./widget.js"></script>
+<script>
+	let myBar = new Bar({
+		message: 'Add beautiful widgets to your website',
+		position: 'top'
+})
+```
+
+1. Add markup:
+```
+<div class="wrapper">
+	<div>
+		<button class="displayBtn wrapper__showBtn--center">Show Bar</button>
+	</div>
+</div>
+```
+	
  # Customizable option:
  This library allows to customize three properties:
  
@@ -50,19 +52,18 @@ Please note that above is optional as widget has its own default setting
 This customizable options must be provided as an object as an argument within our initialisation.
 
 ### Please see example:
-
-```html
+```
 <script>
-  let myBar = new Bar({
-    message: 'Add beautiful widgets to your website',
-    position: 'top',
-    myCustom: {
-      animate: false,
-      background: 'blue',
-      color: 'black',
-      }
-  })
-    </script>
-	```
+	let myBar = new Bar({
+		message: 'Add beautiful widgets to your website',
+		position: 'top',
+		myCustom: {
+			animate: false,
+			background: 'blue',
+			color: 'black',
+		}
+	})
+</script>
+```
 
 
