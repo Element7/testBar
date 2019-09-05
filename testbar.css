@@ -57,6 +57,7 @@ body{
     height:100px;
     cursor: pointer;
     outline:none;
+    z-index:10;
     
 }
 
@@ -82,12 +83,12 @@ body{
 
 .bar__widgetBtn--transform{
     transform:translateX(25px)rotate(15deg);
+    transition: all 1s ease 1s;
 }
 
 .bar__widgetBtn--animation{
-    transition: all 1s ease 1s;
+    
     transform: translate(0)rotate(0);
-
     opacity:1;
 }
 
