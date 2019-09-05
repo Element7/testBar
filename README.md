@@ -48,8 +48,8 @@ Following the steps below you will be able to get the library up and running.
 * Color            // String
 * BackgroundColor  // String
 
-Please note that above is optional as widget has its own default setting
-This customizable options must be provided as an object as an argument within our initialisation.
+Please note that above is optional as widget has its own default setting.
+This customizable options must be provided as an object within our initialisation.
 
 ### Please see example:
 ```
